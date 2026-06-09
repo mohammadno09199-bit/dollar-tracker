@@ -1,8 +1,17 @@
-# Dollar Tracker CLI
+# Dollar Price Tracker CLI
 
-Python script that fetches USD price from tgju.org and shows it in terminal.
+یک ابزار حرفه‌ای برای مانیتورینگ لحظه‌ای قیمت دلار در بازار ایران با قابلیت‌های پیشرفته.
 
-Features:
-- live update every 10 seconds
-- colored output
-- price change indicator
+## قابلیت‌ها
+- 💵 **آپدیت لحظه‌ای:** دریافت قیمت از سایت tgju.org هر ۱۰ ثانیه.
+- 📉 **تشخیص تغییرات:** نمایش تغییرات قیمت (▲ سبز/▼ قرمز) و درصد تغییر.
+- 💾 **لاگ حرفه‌ای:** ذخیره تاریخچه قیمت‌ها در فایل CSV.
+- 🔄 **مدیریت فایل (Rotation):** مدیریت خودکار حجم فایل (حداکثر 1MB).
+- 🧹 **آرشیو هوشمند:** نگه داشتن فقط ۵ فایل آرشیو آخر و حذف خودکار قدیمی‌ها.
+
+## نحوه اجرا
+1. پیش‌نیازها را نصب کن:
+```bash
+   pip install requests beautifulsoup4 colorama
+   
+
